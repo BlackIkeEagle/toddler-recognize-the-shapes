@@ -23,10 +23,10 @@ var pictures = new Array(
 
 function shufflePictures()
 {
-	rndPictures = pictures.shuffle();
+	pictures.shuffle();
 
-	for (i = 0; i < rndPictures.length; i++) {
-		imgSrc = rndPictures[i];
+	for (i = 0; i < pictures.length; i++) {
+		imgSrc = pictures[i];
 		imgAlt = imgSrc.replace(/^.*\//, '');
 		imgTag = document.getElementById('pic' + (i+1));
 		imgTag.src = imgSrc;
