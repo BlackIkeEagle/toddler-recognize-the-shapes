@@ -30,10 +30,11 @@
 				margin-right: 2%;
 			}
 		</style>
+		<script src="assets/trts.js"></script>
 	</head>
-	<body>
+	<body onload="shufflePictures()">
 		<div class="controls">
-			<button>shuffle</button>
+			<button onclick="shufflePictures()">shuffle</button>
 			<select name="size">
 				<option value="large">large</option>
 				<option value="medium">medium</option>
@@ -42,18 +43,18 @@
 		</div>
 		<div class="pictures">
 			<div class="row">
-				<img src="assets/boot.png" alt="boot" />
-				<img src="assets/coffeecup.png" alt="coffeecup" />
-				<img src="assets/apple.png" alt="apple" />
+				<img id="pic1" src="assets/boot.png" alt="boot" />
+				<img id="pic2" src="assets/coffeecup.png" alt="coffeecup" />
+				<img id="pic3" src="assets/apple.png" alt="apple" />
 			</div>
 			<div class="row">
-				<img src="assets/truck.png" alt="truck" />
-				<img src="assets/clock.png" alt="clock" />
+				<img id="pic4" src="assets/truck.png" alt="truck" />
+				<img id="pic5" src="assets/clock.png" alt="clock" />
 			</div>
 			<div class="row">
-				<img src="assets/fish.png" alt="fish" />
-				<img src="assets/duck.png" alt="duck" />
-				<img src="assets/house.png" alt="house" />
+				<img id="pic6" src="assets/fish.png" alt="fish" />
+				<img id="pic7" src="assets/duck.png" alt="duck" />
+				<img id="pic8" src="assets/house.png" alt="house" />
 			</div>
 		</div>
 	</body>
