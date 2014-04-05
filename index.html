@@ -14,11 +14,21 @@
 				width: 100%;
 				height: 10%;
 			}
-			.pictures {
-				position: absolute;
-				top: 10%;
-				width: 100%;
-				height: 90%;
+			@media all and (orientation:portrait) {
+				.pictures {
+					position: absolute;
+					top: 10%;
+					width: 100%;
+					height: 75vw;
+				}
+			}
+			@media all and (orientation:landscape) {
+				.pictures {
+					position: absolute;
+					top: 10%;
+					width: 100%;
+					height: 90vh;
+				}
 			}
 			.row {
 				height: 33%;
